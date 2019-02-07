@@ -5,26 +5,26 @@ import java.util.ArrayList;
 public class LambdaStackImpl implements StackService
 {
     @Override
-    public ArrayList<String> getList(ArrayList<String> list)
+    public ArrayList<String> getList(ArrayList<String> stack)
     {
-        return list;
+        return stack;
     }
 
     @Override
-    public void pop(ArrayList<String> list)
+    public void pop(ArrayList<String> stack)
     {
-        list.remove(0);
+        stack.remove(0);
     }
 
     @Override
-    public void push(String item, ArrayList<String> list)
+    public void push(String item, ArrayList<String> stack)
     {
-        list.add(item);
+        stack.add(item);
     }
 
     @Override
-    public int getNumItems()
+    public int getNumItems(ArrayList<String> stack)
     {
-        return 0;
+        return stack.size();
     }
 }

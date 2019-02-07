@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class LambdaStack implements Processor
 {
     private StackService stackSrv;
+    ArrayList<String> stack;
 
     public LambdaStack (StackService stackSrv)
     {
@@ -12,26 +13,26 @@ public class LambdaStack implements Processor
     }
 
     @Override
-    public ArrayList<String> getList(ArrayList<String> list)
+    public ArrayList<String> getList(ArrayList<String> stack)
     {
-        return list;
+        return stackSrv.getList(stack);
     }
 
     @Override
-    public void pop(ArrayList<String> list)
-    {
-
-    }
-
-    @Override
-    public void push(String item, ArrayList<String> list)
+    public void pop(ArrayList<String> stack)
     {
 
     }
 
     @Override
-    public int getNumItems()
+    public void push(String item, ArrayList<String> stack)
     {
-        return 0;
+
+    }
+
+    @Override
+    public int getNumItems(ArrayList<String> stack)
+    {
+        return stackSrv.getNumItems(stack);
     }
 }
