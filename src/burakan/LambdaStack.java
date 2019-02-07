@@ -24,13 +24,13 @@ public class LambdaStack implements Processor
     }
 
     @Override
-    public void push(ArrayList<String> item, ArrayList<String> list)
+    public void push(String item, ArrayList<String> list)
     {
 
     }
 
     @Override
-    public int getNumItems(ArrayList<String> list)
+    public int getNumItems()
     {
         return 0;
     }

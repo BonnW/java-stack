@@ -23,7 +23,7 @@ public class LambdaStackImpl implements StackService
     }
 
     @Override
-    public int getNumItems(ArrayList<String> list)
+    public int getNumItems()
     {
         return 0;
     }
