@@ -15,6 +15,16 @@ public class Main
 
         injector = new LambdaStackInjector();
         app = injector.getProcess();
-
+//        app.getList(stack);
+        app.push("panda", stack);
+        app.push("panda", stack);
+        app.push("panda", stack);
+        app.push("I", stack);
+        app.push("Got", stack);
+        app.push("Broads", stack);
+        app.push("In", stack);
+        app.push("Atlanta", stack);
+        app.getList(stack);
+        app.getNumItems(stack);
     }
 }
